@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" type="text/css">            
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.4/purify.min.js" integrity="sha512-W5fT2qIB5mnnYGQpzMLesMO7UmqtR7o712igk1FUXP+ftlu94UYDAngTS83l+0s3MwRmtqGDyWncZfiUjsCNHw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <title>Comment Form</title>
+</head>
+<body>
+  <div class="discussion">
+    <div class="discussion-header">
+      <div class="authed-user"></div>
+      <form id="newcomment-form">
+        <textarea tabindex="1" cols="150" rows="4" minlength="5" required placeholder="Write a comment"></textarea>
+        <div class="newcomment-toolbar">
+          <button type="button" id="reset-button" class="button-secondary" tabindex="3">
+            Reset
+          </button>
+          <button type="submit" id="submit-button" class="button-primary" tabindex="2 ">
+            Comment
+          </button>
+        </div>
+      </form>
+    </div>
+    <div class="discussion-comments">
+      <!-- Will be generate -->
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
